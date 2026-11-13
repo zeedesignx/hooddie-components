@@ -1,0 +1,517 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "hooddie",
+  "homepage": "https://www.hooddie.com",
+  "items": [
+    {
+      "name": "product-card",
+      "type": "registry:component",
+      "title": "Product card",
+      "description": "A product tile with a second image on hover, colour swatches that swap the photo, and sale pricing.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/product-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "product-gallery",
+      "type": "registry:component",
+      "title": "Product gallery",
+      "description": "Main photo with thumbnails, arrow keys, and swipe on touch screens.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/product-gallery.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "variant-picker",
+      "type": "registry:component",
+      "title": "Variant picker",
+      "description": "Colour swatches and size buttons, with sold-out sizes crossed out and still announced to screen readers.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/variant-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "size-guide",
+      "type": "registry:component",
+      "title": "Size guide",
+      "description": "A measurement table that switches between centimetres and inches and highlights one size.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/size-guide.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "quantity-stepper",
+      "type": "registry:component",
+      "title": "Quantity stepper",
+      "description": "Minus, number, plus. Respects a minimum and maximum, and works with the keyboard.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/quantity-stepper.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "add-to-bag",
+      "type": "registry:component",
+      "title": "Add to bag",
+      "description": "The buy button with its states: ready, adding, added, sold out. Announces the result to screen readers.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/add-to-bag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "bag-drawer",
+      "type": "registry:component",
+      "title": "Bag drawer",
+      "description": "A slide-over bag with line items, quantity controls, subtotal and a checkout button. Traps focus and closes on Escape.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/bag-drawer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "free-shipping-bar",
+      "type": "registry:component",
+      "title": "Free shipping bar",
+      "description": "A progress bar that says how much more to spend for free shipping, and when it's reached.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/free-shipping-bar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "order-summary",
+      "type": "registry:component",
+      "title": "Order summary",
+      "description": "Line items, discount, shipping, tax and total for the bag or checkout page.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/order-summary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "filter-bar",
+      "type": "registry:component",
+      "title": "Filter bar",
+      "description": "Filter chips and a sort menu for a product listing, with a count and a clear-all button.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/filter-bar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "reviews-summary",
+      "type": "registry:component",
+      "title": "Reviews summary",
+      "description": "Average rating, a bar for each star count, and a short list of reviews.",
+      "categories": [
+        "trust"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/reviews-summary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "announcement-bar",
+      "type": "registry:component",
+      "title": "Announcement bar",
+      "description": "A dismissible strip for one message, such as free shipping or a sale, that remembers it was closed.",
+      "categories": [
+        "trust"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/announcement-bar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sticky-add-to-bag",
+      "type": "registry:component",
+      "title": "Sticky add to bag",
+      "description": "A bar that slides up from the bottom with the price and buy button once the main one scrolls out of view.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/sticky-add-to-bag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "wishlist-button",
+      "type": "registry:component",
+      "title": "Wishlist button",
+      "description": "A heart that saves a product, with its saved state in the markup and announced to screen readers.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/wishlist-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "back-in-stock",
+      "type": "registry:component",
+      "title": "Back in stock",
+      "description": "An email form for a sold-out size that says when the shopper will hear back.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/back-in-stock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stock-indicator",
+      "type": "registry:component",
+      "title": "Stock indicator",
+      "description": "In stock, only a few left, sold out or preorder, said in words and not only in colour.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/stock-indicator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "discount-code",
+      "type": "registry:component",
+      "title": "Discount code",
+      "description": "A field for a discount code that shows the applied code, removes it, and explains why one didn't work.",
+      "categories": [
+        "bag"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/discount-code.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "address-form",
+      "type": "registry:component",
+      "title": "Address form",
+      "description": "Shipping address fields with the right autofill hints, country list and inline errors.",
+      "categories": [
+        "checkout"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/address-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "delivery-options",
+      "type": "registry:component",
+      "title": "Delivery options",
+      "description": "Shipping methods as radio cards with delivery estimate and price, free ones marked.",
+      "categories": [
+        "checkout"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/delivery-options.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkout-steps",
+      "type": "registry:component",
+      "title": "Checkout steps",
+      "description": "Where the shopper is in checkout, with finished steps as links back.",
+      "categories": [
+        "checkout"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/checkout-steps.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "product-search",
+      "type": "registry:component",
+      "title": "Product search",
+      "description": "A search box with product suggestions, keyboard selection, and a no-results state.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/product-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "collection-header",
+      "type": "registry:component",
+      "title": "Collection header",
+      "description": "The top of a category page: title, short description, product count and an optional photo.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/collection-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "mega-menu",
+      "type": "registry:component",
+      "title": "Mega menu",
+      "description": "Store navigation with link columns and a featured product, opened by click or keyboard, closed with Escape.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/mega-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumbs",
+      "type": "registry:component",
+      "title": "Breadcrumbs",
+      "description": "The path to the current page, shortened in the middle on small screens.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/breadcrumbs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "load-more",
+      "type": "registry:component",
+      "title": "Load more",
+      "description": "How many products are shown out of how many, with a progress line and a button for the next batch.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/load-more.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "quick-view",
+      "type": "registry:component",
+      "title": "Quick view",
+      "description": "A product in a dialog from the listing: photo, price, colour and size, and add to bag. Traps focus and closes on Escape.",
+      "categories": [
+        "browse"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/quick-view.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "reviews-list",
+      "type": "registry:component",
+      "title": "Reviews list",
+      "description": "Full reviews with stars, verified-buyer marks and sorting, a few at a time.",
+      "categories": [
+        "trust"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/reviews-list.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "store-benefits",
+      "type": "registry:component",
+      "title": "Store benefits",
+      "description": "A row of short promises such as free shipping, free returns and secure payment, each with an icon.",
+      "categories": [
+        "trust"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/store-benefits.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "newsletter-signup",
+      "type": "registry:component",
+      "title": "Newsletter signup",
+      "description": "An email signup with a consent line and clear sending, done and error states.",
+      "categories": [
+        "trust"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/newsletter-signup.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "virtual-try-on",
+      "type": "registry:component",
+      "title": "Virtual try-on",
+      "description": "The shopper adds a photo and sees the product on themselves. Bring any AI try-on service; the component handles the photo, the wait, the result and the privacy note.",
+      "categories": [
+        "try-on"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/virtual-try-on.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "before-after",
+      "type": "registry:component",
+      "title": "Before and after",
+      "description": "A slider that compares two photos, such as the shopper's photo and the try-on result. Works with drag, touch and arrow keys.",
+      "categories": [
+        "try-on"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/before-after.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "size-finder",
+      "type": "registry:component",
+      "title": "Size finder",
+      "description": "Height, weight and how the shopper likes it to fit in, a recommended size out, with how close the fit is and why.",
+      "categories": [
+        "try-on"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/size-finder.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "product-spin",
+      "type": "registry:component",
+      "title": "360° product spin",
+      "description": "Drag or use arrow keys to turn the product, from a set of photos taken around it.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/product-spin.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "complete-the-look",
+      "type": "registry:component",
+      "title": "Complete the look",
+      "description": "Products that go with this one, ticked by default, with the total and one button to add them all.",
+      "categories": [
+        "product"
+      ],
+      "files": [
+        {
+          "path": "registry/hooddie/complete-the-look.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
