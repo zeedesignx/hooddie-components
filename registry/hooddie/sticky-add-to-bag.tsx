@@ -149,7 +149,7 @@ export function StickyAddToBag({
       <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3 sm:gap-4 sm:px-6">
         {image && (
           <span className="hidden h-12 w-12 shrink-0 overflow-hidden rounded-md bg-muted sm:block">
-            <img src={image} alt="" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />
+            <img src={image} alt="" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />
           </span>
         )}
         <div className="min-w-0 flex-1">

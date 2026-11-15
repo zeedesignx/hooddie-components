@@ -120,7 +120,7 @@ export function OrderSummary({
               {text.discount}
               <span className="rounded border border-border px-1.5 py-0.5 text-xs font-medium">{discount.label}</span>
             </dt>
-            <dd className={cx(amount, "text-emerald-700")}>−{money(Math.abs(discount.amount))}</dd>
+            <dd className={cx(amount, "text-emerald-700 dark:text-emerald-400")}>−{money(Math.abs(discount.amount))}</dd>
           </div>
         )}
         {shipping !== undefined && (

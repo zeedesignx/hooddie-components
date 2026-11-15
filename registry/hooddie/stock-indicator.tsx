@@ -19,8 +19,8 @@ export interface StockIndicatorProps {
 const cx = (...parts: Array<string | false | null | undefined>) => parts.filter(Boolean).join(" ");
 
 const tone: Record<StockStatus, string> = {
-  "in-stock": "text-emerald-700",
-  low: "text-amber-700",
+  "in-stock": "text-emerald-700 dark:text-emerald-400",
+  low: "text-amber-700 dark:text-amber-400",
   out: "text-destructive",
   preorder: "text-muted-foreground",
 };

@@ -38,7 +38,7 @@ export function FreeShippingBar({ subtotal, threshold, currency = "EUR", locale 
 
   return (
     <div className={cx("flex flex-col gap-2 text-foreground", className)}>
-      <p className={cx("flex items-center gap-1.5 text-sm", reached && "font-medium text-emerald-700")}>
+      <p className={cx("flex items-center gap-1.5 text-sm", reached && "font-medium text-emerald-700 dark:text-emerald-400")}>
         {reached && (
           <svg viewBox="0 0 16 16" aria-hidden="true" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M3 8.5l3.5 3.5L13 4.5" />

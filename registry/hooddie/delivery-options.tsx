@@ -121,7 +121,7 @@ export function DeliveryOptions({
                     <span className="sr-only">, </span>
                   </span>
                 </span>
-                <span id={`${key}-price`} className={cx("shrink-0 text-sm font-semibold tabular-nums", option.price === 0 && !disabled && "text-emerald-700")}>
+                <span id={`${key}-price`} className={cx("shrink-0 text-sm font-semibold tabular-nums", option.price === 0 && !disabled && "text-emerald-700 dark:text-emerald-400")}>
                   {option.price === 0 ? text.free : formatMoney(option.price, currency, locale)}
                 </span>
                 {note && (

@@ -100,7 +100,7 @@ export function ProductGallery({ images, index, defaultIndex = 0, onIndexChange,
             loading={i === current ? undefined : "lazy"}
             className={cx(
               "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-300 motion-reduce:transition-none",
-              blend && "mix-blend-multiply",
+              blend && "mix-blend-multiply dark:mix-blend-normal",
               i !== current && "opacity-0",
             )}
           />
@@ -128,7 +128,7 @@ export function ProductGallery({ images, index, defaultIndex = 0, onIndexChange,
               onClick={() => go(i)}
               className="relative aspect-[4/5] w-16 shrink-0 overflow-hidden rounded-md bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
-              <img src={image.src} alt="" loading="lazy" draggable={false} className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />
+              <img src={image.src} alt="" loading="lazy" draggable={false} className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />
               <span aria-hidden="true" className={cx("absolute inset-0 rounded-md border-2 transition-colors duration-150 motion-reduce:transition-none", i === current ? "border-foreground" : "border-transparent")} />
             </button>
           ))}

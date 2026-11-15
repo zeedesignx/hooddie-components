@@ -73,7 +73,7 @@ export function ProductCard({
   const onSale = compareAtPrice !== undefined && compareAtPrice > price;
   const saving = onSale ? Math.round((1 - price / compareAtPrice) * 100) : 0;
   const text = { salePrice: "Sale price", regularPrice: "Regular price", colours: "Colours", ...labels };
-  const photo = cx("absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-300 motion-reduce:transition-none", blend && "mix-blend-multiply");
+  const photo = cx("absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-300 motion-reduce:transition-none", blend && "mix-blend-multiply dark:mix-blend-normal");
 
   return (
     <article className={cx("group flex flex-col gap-3 text-foreground", className)}>
@@ -81,7 +81,7 @@ export function ProductCard({
         <img src={front} alt="" loading="lazy" className={cx(photo, back && "group-hover:opacity-0")} />
         {back && <img src={back} alt="" loading="lazy" className={cx(photo, "opacity-0 group-hover:opacity-100")} />}
         {(badge || onSale) && (
-          <span className={cx("absolute left-3 top-3 rounded-full px-2.5 py-1 text-xs font-semibold", onSale ? "bg-destructive text-white" : "bg-background text-foreground")}>
+          <span className={cx("absolute left-3 top-3 rounded-full px-2.5 py-1 text-xs font-semibold", onSale ? "bg-destructive text-white dark:bg-destructive/60" : "bg-background text-foreground")}>
             {onSale ? `−${saving}%` : badge}
           </span>
         )}

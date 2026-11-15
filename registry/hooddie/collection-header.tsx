@@ -84,7 +84,7 @@ export function CollectionHeader({
             src={image}
             alt={imageAlt}
             style={{ objectPosition: imagePosition }}
-            className={cx("absolute inset-0 h-full w-full", imageFit === "contain" ? "object-contain p-4" : "object-cover", blend && "mix-blend-multiply")}
+            className={cx("absolute inset-0 h-full w-full", imageFit === "contain" ? "object-contain p-4" : "object-cover", blend && "mix-blend-multiply dark:mix-blend-normal")}
           />
         </div>
       )}

@@ -180,7 +180,7 @@ export function ProductSpin({
           aria-hidden={i === current ? undefined : true}
           draggable={false}
           decoding="async"
-          className={cx("absolute inset-0 h-full w-full object-contain", blend && "mix-blend-multiply", i === current ? "visible" : "invisible")}
+          className={cx("absolute inset-0 h-full w-full object-contain", blend && "mix-blend-multiply dark:mix-blend-normal", i === current ? "visible" : "invisible")}
         />
       ))}
 

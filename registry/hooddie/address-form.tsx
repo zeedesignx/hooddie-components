@@ -428,7 +428,7 @@ export function AddressForm({
           )}
           {busy ? text.submitting : text.submit}
         </button>
-        <p role="status" aria-live="polite" className={cx("text-sm", formError ? "text-destructive" : "text-emerald-700")}>
+        <p role="status" aria-live="polite" className={cx("text-sm", formError ? "text-destructive" : "text-emerald-700 dark:text-emerald-400")}>
           {formError || (saved ? text.saved : "")}
         </p>
       </div>

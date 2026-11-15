@@ -246,7 +246,7 @@ export function MegaMenu({
           loading="lazy"
           className={cx(
             "absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100",
-            blend && "mix-blend-multiply",
+            blend && "mix-blend-multiply dark:mix-blend-normal",
           )}
         />
       </span>

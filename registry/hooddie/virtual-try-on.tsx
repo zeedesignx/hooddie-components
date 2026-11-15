@@ -602,7 +602,7 @@ function TryOnPanel({
             <ul className="flex flex-col gap-2 text-sm">
               {text.tips.map((tip) => (
                 <li key={tip} className="flex gap-2">
-                  <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-4 w-4 shrink-0 text-emerald-700">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-4 w-4 shrink-0 text-emerald-700 dark:text-emerald-400">
                     <path d="m3.5 8.5 3 3 6-7" />
                   </svg>
                   {tip}

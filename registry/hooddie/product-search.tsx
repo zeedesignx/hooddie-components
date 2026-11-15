@@ -425,7 +425,7 @@ export function ProductSearch({
                   >
                     {item.image ? (
                       <span className="relative h-14 w-11 shrink-0 overflow-hidden rounded bg-muted">
-                        <img src={item.image} alt="" loading="lazy" className={cx("absolute inset-0 h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />
+                        <img src={item.image} alt="" loading="lazy" className={cx("absolute inset-0 h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />
                       </span>
                     ) : null}
                     <span className="min-w-0 flex-1">

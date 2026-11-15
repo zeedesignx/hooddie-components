@@ -320,7 +320,7 @@ export function QuickView({
         <div className="grid md:grid-cols-2">
           <div className="flex flex-col gap-3 p-4 pb-0 md:p-5 md:pr-0">
             <div className="relative aspect-square overflow-hidden rounded-lg bg-muted md:aspect-[4/5]">
-              {shownSrc && <img src={shownSrc} alt={shownAlt} className={cx("absolute inset-0 h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />}
+              {shownSrc && <img src={shownSrc} alt={shownAlt} className={cx("absolute inset-0 h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />}
             </div>
             {images.length > 1 && (
               <div className="flex gap-2">
@@ -335,7 +335,7 @@ export function QuickView({
                       onClick={() => setPhoto(image.src)}
                       className={cx("h-16 w-14 shrink-0 overflow-hidden rounded-md border-2 bg-muted", current ? "border-foreground" : "border-transparent hover:border-border", ringOffset)}
                     >
-                      <img src={image.src} alt="" loading="lazy" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />
+                      <img src={image.src} alt="" loading="lazy" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />
                     </button>
                   );
                 })}

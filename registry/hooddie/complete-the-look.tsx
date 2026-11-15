@@ -146,7 +146,7 @@ export function CompleteTheLook({
                 </svg>
               )}
               <div className={cx("aspect-[4/5] w-full min-w-0 max-w-[7.5rem] overflow-hidden rounded-md bg-muted transition-opacity duration-200 motion-reduce:transition-none", !on && "opacity-30")}>
-                <img src={item.image} alt="" loading="lazy" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply")} />
+                <img src={item.image} alt="" loading="lazy" className={cx("h-full w-full object-cover object-top", blend && "mix-blend-multiply dark:mix-blend-normal")} />
               </div>
             </React.Fragment>
           );

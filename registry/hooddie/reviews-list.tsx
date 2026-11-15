@@ -207,7 +207,7 @@ export function ReviewsList({ reviews, sort, defaultSort = "newest", onSortChang
                       {review.author}
                     </p>
                     {review.verified && (
-                      <p className="inline-flex items-center gap-1 text-emerald-700">
+                      <p className="inline-flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
                         <svg viewBox="0 0 16 16" aria-hidden="true" className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                           <circle cx="8" cy="8" r="6.25" />
                           <path d="m5.5 8.25 1.75 1.75L10.75 6.5" />

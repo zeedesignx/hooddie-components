@@ -511,7 +511,7 @@ export function SizeFinder({
         <div className="flex flex-col gap-1.5 text-sm">
           <p>{text.reason(res.size, res.fit, smaller, larger)}</p>
           {res.note && <p className="text-muted-foreground">{res.note}</p>}
-          {soldOut && <p className="font-medium text-amber-700">{text.soldOut(res.size)}</p>}
+          {soldOut && <p className="font-medium text-amber-700 dark:text-amber-400">{text.soldOut(res.size)}</p>}
         </div>
 
         {ticks.length > 1 && marker !== undefined && (
