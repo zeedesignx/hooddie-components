@@ -98,7 +98,7 @@ Or copy the file from `registry/hooddie/` into your project. Components use the 
 />
 ```
 
-The photo is scaled down and re-encoded in the browser (which drops its metadata) and is only sent where `onGenerate` sends it.
+The photo is scaled down and re-encoded in the browser (which drops its metadata) and is only sent where `onGenerate` sends it. The [try-on guide](https://www.hooddie.com/docs/try-on) has a server route example and notes on handling shoppers' photos.
 
 ## Licence
 
